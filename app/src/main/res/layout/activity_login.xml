@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tk.mayankrathore.helpwali_v10.LoginActivity"
+    android:background="@drawable/greenblurry"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Login to HelpWali"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/heading"
+        android:text="Liberating the esteemed, connnecting the need."
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/subheading"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_logo"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:hint="Username"
+            android:background="#471d740c"
+            android:textColorHint="#ffffff"/>
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="#471d740c"
+            android:textColorHint="#ffffff"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ec0923"
+            android:text="Sign in"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="Don't have an account?"/>
+    <TextView
+        android:id="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout"
+        android:layout_toRightOf="@id/tag1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="Sign up"
+        android:textColor="#ffffff"
+        android:clickable="true"
+        android:onClick="toSignup"/>
+</RelativeLayout>

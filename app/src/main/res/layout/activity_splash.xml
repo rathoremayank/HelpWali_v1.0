@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tk.mayankrathore.helpwali_v10.SplashActivity"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="170dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="HelpWali"
+        android:fontFamily="serif"
+        android:textColor="#9c9c9c"
+        android:textSize="38sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_below="@+id/label"
+        android:layout_marginTop="100dp"
+        android:text="TheBigPicture Collaborations"
+        android:textSize="10dp"
+        android:textColor="#9e9e9e"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
